@@ -23,7 +23,8 @@ body {
 
 .bg {
     /* The image used */
-    background-image: url("pexels-alexandre-p-junior-7736151.jpg");
+    background-image: url("bg-wizards-2.jpg");
+
 
     /* Full height */
     height: 100%;
@@ -38,7 +39,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.4fr;
+    grid-template-rows: 0.4fr 2.7fr 0.4fr;
 }
 
 header {
@@ -107,4 +108,30 @@ a {
 #hero-wizard {
     height: 500px;
     width: 500px;
+}
+
+/* wizards page */
+
+.container-wizard {
+
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 200px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
